@@ -70,12 +70,12 @@
   padding: 20px;
 }
 
-.project-title {
+.project-title, .annoucement-title {
   color: black;
   font-weight: bold;
 }
 
-.project-content {
+.project-content, .annoucement-content {
   color:gray;
 }
 
@@ -87,5 +87,19 @@
 
 .annoucements {
   grid-column: 2 / 3;
-  background-color: gold;
+  background-color: lightgray;
+  padding: 15px;
+}
+
+.annoucements-container {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 15px 15px 0 15px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.annoucement-card {
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
 }
