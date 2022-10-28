@@ -45,9 +45,44 @@
   grid-template-rows: 1fr 1fr;
 }
 
+.heading {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
 .projects {
   grid-row: 1 / 3;
-  background-color: coral;
+  background-color: lightgray;
+  padding: 15px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.project-card {
+  background-color: white;
+  border-left: 5px solid orange;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.project-title {
+  color: black;
+  font-weight: bold;
+}
+
+.project-content {
+  color:gray;
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
 }
 
 .annoucements {
